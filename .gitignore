@@ -1,9 +1,20 @@
-# Keil uVision specific files
-*.uvguix.*
-*.uvgui.*
+# 忽略根目录下除 keil 文件夹外的所有内容
+/source/
+/tools/
+
+# 在 keil 文件夹内，忽略编译生成的文件
+keil/Objects/
+keil/Listings/
+keil/RTE/
+keil/DebugConfig/
+
+# Keil uVision 用户配置文件
+keil/*.uvguix.*
+keil/*.uvgui.*
+
+# 编译生成的文件
 *.bak
 *.dep
-*.uvopt
 *.plg
 *.tra
 *.iex
@@ -13,72 +24,15 @@
 *.axf
 *.htm
 *.lnp
-*.sct~
 *.map
 *.build_log.htm
-
-# Compiled Object files
 *.o
 *.obj
 *.elf
 *.hex
 *.bin
 
-# Build directories
-keil/Objects/
-keil/Listings/
-keil/RTE/
-keil/DebugConfig/
-Objects/
-Listings/
-RTE/
-
-# Debug files
-*.dap
-
-# Linker output
-*.map
-*.hex
-*.bin
-*.axf
-*.out
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# IDE specific
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS specific
+# OS 特定文件
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
 Desktop.ini
-
-# Logs
-*.log
-
-# Temporary files
-*.tmp
-*.temp
