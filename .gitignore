@@ -1,6 +1,7 @@
 # 忽略根目录下除 keil 文件夹外的所有内容
 /source/
 /tools/
+/.metadata/
 
 # 在 keil 文件夹内，忽略编译生成的文件
 keil/Objects/
